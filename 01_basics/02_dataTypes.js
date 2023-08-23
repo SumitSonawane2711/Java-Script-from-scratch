@@ -21,9 +21,28 @@
  let state=null;
  let city;
 
+/* Reference (non primitive)
+   1.Array
+   2.Object
+   3.Functions
+
+*/
+
 //object 
 
 console.log(typeof age)
 console.log(typeof undefined);
 //if run the typeof of null then it gives object
 console.log(typeof null);
+
+
+const heroes = ["shaktiman","spiderman","antman"]
+console.log(heroes);
+
+
+
+//  ***********************************************************************************
+
+//stack memory(primitive data types) and Heap memory(Non-Primitive)
+
+let myname="sumit"
