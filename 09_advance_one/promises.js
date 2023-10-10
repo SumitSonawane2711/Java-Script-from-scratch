@@ -102,3 +102,48 @@ fetch('https://jsonplaceholder.typicode.com/users')
     console.log(data);
 })
 .catch((error) => console.log(error))
+
+
+/********************************************************************************************************** */
+//promise can store one of the three state resole, reject and pending 
+
+
+var ans = new Promise((res, rej)=>{
+    if(true){
+        return res()
+    }
+    else{
+        return rej()
+    }
+})
+
+ans
+.then(function(){
+    //console.log("resove hua tha");
+})
+
+.catch(function(){
+    //console.log("reject hua tha");
+})
+
+
+// create promise for user will ask for a number between 0 se 9 if the number is below 5 then resolve else reject
+
+var promise1= new Promise((res, rej)=>{
+    var n = Math.floor(Math.random()*10)
+
+    if(n<5){
+        return res()
+    }
+    else{
+        return rej()
+    }
+})
+
+promise1
+.then(function(){
+    console.log("below");
+})
+.catch(function(){
+    console.log("above");
+})
