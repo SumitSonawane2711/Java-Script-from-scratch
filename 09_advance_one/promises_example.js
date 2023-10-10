@@ -20,11 +20,33 @@ var P2 = P1.then(function(data){
     })
 })
 
-P2.then(function(data){
+var p3 = P2.then(function(data){
     console.log(data);
 
     return new Promise((res ,rej)=> {
-        return res()
+        return res("Learn and practice js")
     })
 })
+
+var p4 = p3.then(function(data){
+    console.log(data);
+
+    return new Promise((res, rej)=>{
+        return res("learn React and create front end project")
+    })
+})
+
+var p5 = p4.then(function(data){
+    console.log(data);
+
+    return new Promise ((res)=>{
+        return res("then move on to backend")
+    })
+
+})
+
+p5.then(function(data){
+    console.log(data);
+})
+
 
